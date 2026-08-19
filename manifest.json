@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Hiper - Associação de Unidade em Lote",
+  "version": "1.0.0",
+  "description": "Permite associar a unidade de medida em lote para produtos na importação de notas XML no Hiper.",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.hiper.com.br/*",
+        "*://*.hiper.com/*"
+      ],
+      "js": ["content/content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [],
+      "matches": []
+    }
+  ]
+}
